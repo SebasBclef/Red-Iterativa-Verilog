@@ -1,0 +1,212 @@
+$date
+	Wed Nov 29 07:40:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module Comparador_tb $end
+$scope module uut $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 # W_out $end
+$var wire 1 $ Z $end
+$var wire 2 % W_temp [1:0] $end
+$scope begin gen_celdas[0] $end
+$scope module uut_tipica $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 & w $end
+$var wire 1 ' wB_neg_OR $end
+$var wire 1 ( wA_OR $end
+$var wire 1 ) W $end
+$var wire 1 * OR1 $end
+$var wire 1 + B_neg $end
+$var wire 1 , AB_neg_OR $end
+$scope module comp_AND_ct1 $end
+$var wire 1 ' AND $end
+$var wire 1 & A_and $end
+$var wire 1 + B_and $end
+$upscope $end
+$scope module comp_AND_ct2 $end
+$var wire 1 ( AND $end
+$var wire 1 & A_and $end
+$var wire 1 ! B_and $end
+$upscope $end
+$scope module comp_AND_ct3 $end
+$var wire 1 , AND $end
+$var wire 1 ! A_and $end
+$var wire 1 + B_and $end
+$upscope $end
+$scope module comp_OR_ct1 $end
+$var wire 1 ' A_or $end
+$var wire 1 ( B_or $end
+$var wire 1 * OR $end
+$upscope $end
+$scope module comp_OR_ct2 $end
+$var wire 1 * A_or $end
+$var wire 1 , B_or $end
+$var wire 1 ) OR $end
+$upscope $end
+$scope module inversorB $end
+$var wire 1 " entrada $end
+$var wire 1 + salida $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module uut_final_e $end
+$var wire 1 - A $end
+$var wire 1 . B $end
+$var wire 1 / W $end
+$var wire 1 $ Z $end
+$scope module inversorW_cf $end
+$var wire 1 / entrada $end
+$var wire 1 $ salida $end
+$upscope $end
+$upscope $end
+$scope module uut_inicial $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 0 W $end
+$var wire 1 1 B_neg $end
+$scope module comp_AND_ci $end
+$var wire 1 0 AND $end
+$var wire 1 ! A_and $end
+$var wire 1 1 B_and $end
+$upscope $end
+$scope module inversorB $end
+$var wire 1 " entrada $end
+$var wire 1 1 salida $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#20
+$dumpvars
+11
+10
+1/
+z.
+z-
+1,
+1+
+1*
+1)
+1(
+1'
+1&
+b11 %
+0$
+0#
+0"
+1!
+$end
+#2030
+1#
+1$
+0/
+0)
+0*
+0'
+0&
+0(
+0,
+b0 %
+00
+0!
+#4040
+1#
+1$
+0*
+0/
+0(
+0)
+0&
+0+
+01
+0,
+b0 %
+00
+1"
+1!
+#6050
+1+
+11
+0"
+0!
+#8060
+1#
+1$
+0*
+0/
+0(
+0)
+0&
+0+
+01
+0,
+b0 %
+00
+1"
+1!
+#14090
+0#
+0$
+1*
+1/
+1'
+1(
+1)
+1&
+1,
+b11 %
+10
+1+
+11
+0"
+#16100
+1#
+1$
+0/
+0)
+0*
+0'
+0&
+0(
+0,
+b0 %
+00
+0!
+#18110
+0#
+0$
+1*
+1/
+1'
+1(
+1)
+1&
+1,
+b11 %
+10
+1!
+#20120
+1#
+1$
+0/
+0)
+0*
+0'
+0&
+0+
+01
+0(
+0,
+b0 %
+00
+1"
+0!
+#22130

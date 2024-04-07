@@ -1,0 +1,332 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000028ddb30 .scope module, "Comparador_tb" "Comparador_tb" 2 8;
+ .timescale -9 -9;
+P_00000000028e8e10 .param/l "N" 0 2 8, +C4<00000000000000000000000000000001>;
+v0000000002943c70_0 .var "A", 0 0;
+v0000000002944710_0 .var "B", 0 0;
+v0000000002944c10_0 .net "W_out", 0 0, L_0000000002946e40;  1 drivers
+v0000000002944350_0 .var "reset", 0 0;
+S_00000000028e09a0 .scope module, "uut" "Comparador" 2 21, 3 9 0, S_00000000028ddb30;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /OUTPUT 1 "W_out"
+P_00000000028e99d0 .param/l "N" 0 3 9, +C4<00000000000000000000000000000001>;
+L_0000000002946e40 .functor BUFZ 1, L_0000000002946890, C4<0>, C4<0>, C4<0>;
+v0000000002944670_0 .net "A", 0 0, v0000000002943c70_0;  1 drivers
+v0000000002944b70_0 .net "B", 0 0, v0000000002944710_0;  1 drivers
+v0000000002944490_0 .net "W_out", 0 0, L_0000000002946e40;  alias, 1 drivers
+v0000000002944cb0_0 .net "W_temp", 1 0, L_0000000002944f30;  1 drivers
+v0000000002944170_0 .net "Z", 0 0, L_0000000002946890;  1 drivers
+L_0000000002943ef0 .part L_0000000002944f30, 0, 1;
+L_0000000002944f30 .concat8 [ 1 1 0 0], L_00000000029465f0, L_0000000002946ac0;
+L_0000000002944530 .part L_0000000002944f30, 1, 1;
+S_00000000028b5170 .scope generate, "gen_celdas[0]" "gen_celdas[0]" 3 22, 3 22 0, S_00000000028e09a0;
+ .timescale -9 -9;
+P_00000000028e9b50 .param/l "i" 0 3 22, +C4<00>;
+S_00000000028b52f0 .scope module, "uut_tipica" "celda_tipica_e" 3 27, 4 3 0, S_00000000028b5170;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /INPUT 1 "w"
+    .port_info 3 /OUTPUT 1 "W"
+v00000000028dcdf0_0 .net "A", 0 0, v0000000002943c70_0;  alias, 1 drivers
+v00000000028dd4d0_0 .net "AB_neg_OR", 0 0, L_0000000002946820;  1 drivers
+v00000000028dd9d0_0 .net "B", 0 0, v0000000002944710_0;  alias, 1 drivers
+v00000000028dccb0_0 .net "B_neg", 0 0, L_00000000028c7800;  1 drivers
+v00000000028dda70_0 .net "OR1", 0 0, L_0000000002946190;  1 drivers
+v00000000028dce90_0 .net "W", 0 0, L_0000000002946ac0;  1 drivers
+v0000000002943d10_0 .net "w", 0 0, L_0000000002943ef0;  1 drivers
+v0000000002943a90_0 .net "wA_OR", 0 0, L_00000000028c7b80;  1 drivers
+v00000000029440d0_0 .net "wB_neg_OR", 0 0, L_00000000028c7870;  1 drivers
+S_00000000008dd2e0 .scope module, "comp_AND_ct1" "Comp_AND" 4 23, 5 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_and"
+    .port_info 1 /INPUT 1 "B_and"
+    .port_info 2 /OUTPUT 1 "AND"
+L_00000000028c7870 .functor AND 1, L_0000000002943ef0, L_00000000028c7800, C4<1>, C4<1>;
+v00000000028dcfd0_0 .net "AND", 0 0, L_00000000028c7870;  alias, 1 drivers
+v00000000028dd890_0 .net "A_and", 0 0, L_0000000002943ef0;  alias, 1 drivers
+v00000000028dd610_0 .net "B_and", 0 0, L_00000000028c7800;  alias, 1 drivers
+S_00000000008dd460 .scope module, "comp_AND_ct2" "Comp_AND" 4 29, 5 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_and"
+    .port_info 1 /INPUT 1 "B_and"
+    .port_info 2 /OUTPUT 1 "AND"
+L_00000000028c7b80 .functor AND 1, L_0000000002943ef0, v0000000002943c70_0, C4<1>, C4<1>;
+v00000000028dd750_0 .net "AND", 0 0, L_00000000028c7b80;  alias, 1 drivers
+v00000000028dd1b0_0 .net "A_and", 0 0, L_0000000002943ef0;  alias, 1 drivers
+v00000000028dd070_0 .net "B_and", 0 0, v0000000002943c70_0;  alias, 1 drivers
+S_00000000008de7d0 .scope module, "comp_AND_ct3" "Comp_AND" 4 35, 5 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_and"
+    .port_info 1 /INPUT 1 "B_and"
+    .port_info 2 /OUTPUT 1 "AND"
+L_0000000002946820 .functor AND 1, v0000000002943c70_0, L_00000000028c7800, C4<1>, C4<1>;
+v00000000028dcf30_0 .net "AND", 0 0, L_0000000002946820;  alias, 1 drivers
+v00000000028dcb70_0 .net "A_and", 0 0, v0000000002943c70_0;  alias, 1 drivers
+v00000000028dd110_0 .net "B_and", 0 0, L_00000000028c7800;  alias, 1 drivers
+S_00000000008de950 .scope module, "comp_OR_ct1" "Comp_OR" 4 42, 6 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_or"
+    .port_info 1 /INPUT 1 "B_or"
+    .port_info 2 /OUTPUT 1 "OR"
+L_0000000002946190 .functor OR 1, L_00000000028c7870, L_00000000028c7b80, C4<0>, C4<0>;
+v00000000028dcd50_0 .net "A_or", 0 0, L_00000000028c7870;  alias, 1 drivers
+v00000000028dd250_0 .net "B_or", 0 0, L_00000000028c7b80;  alias, 1 drivers
+v00000000028dd6b0_0 .net "OR", 0 0, L_0000000002946190;  alias, 1 drivers
+S_00000000028829b0 .scope module, "comp_OR_ct2" "Comp_OR" 4 48, 6 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_or"
+    .port_info 1 /INPUT 1 "B_or"
+    .port_info 2 /OUTPUT 1 "OR"
+L_0000000002946ac0 .functor OR 1, L_0000000002946190, L_0000000002946820, C4<0>, C4<0>;
+v00000000028dcc10_0 .net "A_or", 0 0, L_0000000002946190;  alias, 1 drivers
+v00000000028dd7f0_0 .net "B_or", 0 0, L_0000000002946820;  alias, 1 drivers
+v00000000028dd390_0 .net "OR", 0 0, L_0000000002946ac0;  alias, 1 drivers
+S_0000000002882b30 .scope module, "inversorB" "inversor" 4 16, 7 1 0, S_00000000028b52f0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "entrada"
+    .port_info 1 /OUTPUT 1 "salida"
+L_00000000028c7800 .functor NOT 1, v0000000002944710_0, C4<0>, C4<0>, C4<0>;
+v00000000028dd930_0 .net "entrada", 0 0, v0000000002944710_0;  alias, 1 drivers
+v00000000028dd430_0 .net "salida", 0 0, L_00000000028c7800;  alias, 1 drivers
+S_00000000028bc540 .scope module, "uut_final_e" "celda_final_e" 3 35, 8 3 0, S_00000000028e09a0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "W"
+    .port_info 1 /INPUT 1 "A"
+    .port_info 2 /INPUT 1 "B"
+    .port_info 3 /OUTPUT 1 "Z"
+o00000000028ec4f8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000029447b0_0 .net "A", 0 0, o00000000028ec4f8;  0 drivers
+o00000000028ec528 .functor BUFZ 1, C4<z>; HiZ drive
+v0000000002943b30_0 .net "B", 0 0, o00000000028ec528;  0 drivers
+v0000000002944df0_0 .net "W", 0 0, L_0000000002944530;  1 drivers
+v0000000002944e90_0 .net "Z", 0 0, L_0000000002946890;  alias, 1 drivers
+S_00000000028bc6c0 .scope module, "inversorW_cf" "inversor" 8 14, 7 1 0, S_00000000028bc540;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "entrada"
+    .port_info 1 /OUTPUT 1 "salida"
+L_0000000002946890 .functor NOT 1, L_0000000002944530, C4<0>, C4<0>, C4<0>;
+v0000000002943e50_0 .net "entrada", 0 0, L_0000000002944530;  alias, 1 drivers
+v0000000002944d50_0 .net "salida", 0 0, L_0000000002946890;  alias, 1 drivers
+S_00000000028b7fa0 .scope module, "uut_inicial" "celda_inicial_e" 3 15, 9 3 0, S_00000000028e09a0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /OUTPUT 1 "W"
+v0000000002943270_0 .net "A", 0 0, v0000000002943c70_0;  alias, 1 drivers
+v0000000002944030_0 .net "B", 0 0, v0000000002944710_0;  alias, 1 drivers
+v0000000002943db0_0 .net "B_neg", 0 0, L_0000000002946c10;  1 drivers
+v0000000002943310_0 .net "W", 0 0, L_00000000029465f0;  1 drivers
+S_00000000028b8120 .scope module, "comp_AND_ci" "Comp_AND" 9 19, 5 1 0, S_00000000028b7fa0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "A_and"
+    .port_info 1 /INPUT 1 "B_and"
+    .port_info 2 /OUTPUT 1 "AND"
+L_00000000029465f0 .functor AND 1, v0000000002943c70_0, L_0000000002946c10, C4<1>, C4<1>;
+v00000000029442b0_0 .net "AND", 0 0, L_00000000029465f0;  alias, 1 drivers
+v0000000002943950_0 .net "A_and", 0 0, v0000000002943c70_0;  alias, 1 drivers
+v0000000002944a30_0 .net "B_and", 0 0, L_0000000002946c10;  alias, 1 drivers
+S_00000000028b82a0 .scope module, "inversorB" "inversor" 9 13, 7 1 0, S_00000000028b7fa0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "entrada"
+    .port_info 1 /OUTPUT 1 "salida"
+L_0000000002946c10 .functor NOT 1, v0000000002944710_0, C4<0>, C4<0>, C4<0>;
+v00000000029445d0_0 .net "entrada", 0 0, v0000000002944710_0;  alias, 1 drivers
+v0000000002944210_0 .net "salida", 0 0, L_0000000002946c10;  alias, 1 drivers
+    .scope S_00000000028ddb30;
+T_0 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_00000000028ddb30;
+T_1 ;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %vpi_call 2 32 "$dumpfile", "Comparador_tb.vcd" {0 0 0};
+    %vpi_call 2 33 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000000028e09a0 {0 0 0};
+    %vpi_func 2 40 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 41 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 45 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 49 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 50 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 54 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 56 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 57 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 61 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 63 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 64 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 68 "$display", "Valor: A = %b, B = %b,W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 70 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 71 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 75 "$display", "Valor: A = %b, B = %b,W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 78 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 79 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 83 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 86 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 87 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 91 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 94 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 95 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 99 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 102 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 103 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 107 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 110 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 111 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 115 "$display", "Valor: A = %b, B = %b, W_out  = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_func 2 118 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002943c70_0, 0, 1;
+    %vpi_func 2 119 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000000000001 {0 0 0};
+    %pad/u 1;
+    %store/vec4 v0000000002944710_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000002944350_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 123 "$display", "Valor: A = %b, B = %b, W_out = %b", v0000000002943c70_0, v0000000002944710_0, v0000000002944c10_0 {0 0 0};
+    %vpi_call 2 126 "$display", "end of test." {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 10;
+    "N/A";
+    "<interactive>";
+    "Comparador_tb.v";
+    "./Comparador .v";
+    "./celda_tipica_e.v";
+    "./Comp_AND.v";
+    "./Comp_OR.v";
+    "./inversor.v";
+    "./celda_final_e.v";
+    "./celda_inicial_e.v";

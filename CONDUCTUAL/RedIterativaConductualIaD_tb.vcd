@@ -1,0 +1,1580 @@
+$date
+	Wed Nov 29 07:39:11 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module RedIterativaConductualIaD_tb $end
+$scope module uut $end
+$var wire 32 ! A [31:0] $end
+$var wire 32 " B [31:0] $end
+$var wire 1 # Z_out $end
+$var wire 1 $ Z $end
+$var wire 33 % Y_temp [32:0] $end
+$var wire 33 & X_temp [32:0] $end
+$scope begin gen_celdas[0] $end
+$scope module uut_tipica $end
+$var wire 1 ' A $end
+$var wire 1 ( B $end
+$var wire 1 ) X $end
+$var wire 1 * Y $end
+$var wire 1 + reset $end
+$var wire 1 , x $end
+$var wire 1 - y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[1] $end
+$scope module uut_tipica $end
+$var wire 1 . A $end
+$var wire 1 / B $end
+$var wire 1 0 X $end
+$var wire 1 1 Y $end
+$var wire 1 2 reset $end
+$var wire 1 3 x $end
+$var wire 1 4 y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[2] $end
+$scope module uut_tipica $end
+$var wire 1 5 A $end
+$var wire 1 6 B $end
+$var wire 1 7 X $end
+$var wire 1 8 Y $end
+$var wire 1 9 reset $end
+$var wire 1 : x $end
+$var wire 1 ; y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[3] $end
+$scope module uut_tipica $end
+$var wire 1 < A $end
+$var wire 1 = B $end
+$var wire 1 > X $end
+$var wire 1 ? Y $end
+$var wire 1 @ reset $end
+$var wire 1 A x $end
+$var wire 1 B y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[4] $end
+$scope module uut_tipica $end
+$var wire 1 C A $end
+$var wire 1 D B $end
+$var wire 1 E X $end
+$var wire 1 F Y $end
+$var wire 1 G reset $end
+$var wire 1 H x $end
+$var wire 1 I y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[5] $end
+$scope module uut_tipica $end
+$var wire 1 J A $end
+$var wire 1 K B $end
+$var wire 1 L X $end
+$var wire 1 M Y $end
+$var wire 1 N reset $end
+$var wire 1 O x $end
+$var wire 1 P y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[6] $end
+$scope module uut_tipica $end
+$var wire 1 Q A $end
+$var wire 1 R B $end
+$var wire 1 S X $end
+$var wire 1 T Y $end
+$var wire 1 U reset $end
+$var wire 1 V x $end
+$var wire 1 W y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[7] $end
+$scope module uut_tipica $end
+$var wire 1 X A $end
+$var wire 1 Y B $end
+$var wire 1 Z X $end
+$var wire 1 [ Y $end
+$var wire 1 \ reset $end
+$var wire 1 ] x $end
+$var wire 1 ^ y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[8] $end
+$scope module uut_tipica $end
+$var wire 1 _ A $end
+$var wire 1 ` B $end
+$var wire 1 a X $end
+$var wire 1 b Y $end
+$var wire 1 c reset $end
+$var wire 1 d x $end
+$var wire 1 e y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[9] $end
+$scope module uut_tipica $end
+$var wire 1 f A $end
+$var wire 1 g B $end
+$var wire 1 h X $end
+$var wire 1 i Y $end
+$var wire 1 j reset $end
+$var wire 1 k x $end
+$var wire 1 l y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[10] $end
+$scope module uut_tipica $end
+$var wire 1 m A $end
+$var wire 1 n B $end
+$var wire 1 o X $end
+$var wire 1 p Y $end
+$var wire 1 q reset $end
+$var wire 1 r x $end
+$var wire 1 s y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[11] $end
+$scope module uut_tipica $end
+$var wire 1 t A $end
+$var wire 1 u B $end
+$var wire 1 v X $end
+$var wire 1 w Y $end
+$var wire 1 x reset $end
+$var wire 1 y x $end
+$var wire 1 z y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[12] $end
+$scope module uut_tipica $end
+$var wire 1 { A $end
+$var wire 1 | B $end
+$var wire 1 } X $end
+$var wire 1 ~ Y $end
+$var wire 1 !" reset $end
+$var wire 1 "" x $end
+$var wire 1 #" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[13] $end
+$scope module uut_tipica $end
+$var wire 1 $" A $end
+$var wire 1 %" B $end
+$var wire 1 &" X $end
+$var wire 1 '" Y $end
+$var wire 1 (" reset $end
+$var wire 1 )" x $end
+$var wire 1 *" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[14] $end
+$scope module uut_tipica $end
+$var wire 1 +" A $end
+$var wire 1 ," B $end
+$var wire 1 -" X $end
+$var wire 1 ." Y $end
+$var wire 1 /" reset $end
+$var wire 1 0" x $end
+$var wire 1 1" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[15] $end
+$scope module uut_tipica $end
+$var wire 1 2" A $end
+$var wire 1 3" B $end
+$var wire 1 4" X $end
+$var wire 1 5" Y $end
+$var wire 1 6" reset $end
+$var wire 1 7" x $end
+$var wire 1 8" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[16] $end
+$scope module uut_tipica $end
+$var wire 1 9" A $end
+$var wire 1 :" B $end
+$var wire 1 ;" X $end
+$var wire 1 <" Y $end
+$var wire 1 =" reset $end
+$var wire 1 >" x $end
+$var wire 1 ?" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[17] $end
+$scope module uut_tipica $end
+$var wire 1 @" A $end
+$var wire 1 A" B $end
+$var wire 1 B" X $end
+$var wire 1 C" Y $end
+$var wire 1 D" reset $end
+$var wire 1 E" x $end
+$var wire 1 F" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[18] $end
+$scope module uut_tipica $end
+$var wire 1 G" A $end
+$var wire 1 H" B $end
+$var wire 1 I" X $end
+$var wire 1 J" Y $end
+$var wire 1 K" reset $end
+$var wire 1 L" x $end
+$var wire 1 M" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[19] $end
+$scope module uut_tipica $end
+$var wire 1 N" A $end
+$var wire 1 O" B $end
+$var wire 1 P" X $end
+$var wire 1 Q" Y $end
+$var wire 1 R" reset $end
+$var wire 1 S" x $end
+$var wire 1 T" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[20] $end
+$scope module uut_tipica $end
+$var wire 1 U" A $end
+$var wire 1 V" B $end
+$var wire 1 W" X $end
+$var wire 1 X" Y $end
+$var wire 1 Y" reset $end
+$var wire 1 Z" x $end
+$var wire 1 [" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[21] $end
+$scope module uut_tipica $end
+$var wire 1 \" A $end
+$var wire 1 ]" B $end
+$var wire 1 ^" X $end
+$var wire 1 _" Y $end
+$var wire 1 `" reset $end
+$var wire 1 a" x $end
+$var wire 1 b" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[22] $end
+$scope module uut_tipica $end
+$var wire 1 c" A $end
+$var wire 1 d" B $end
+$var wire 1 e" X $end
+$var wire 1 f" Y $end
+$var wire 1 g" reset $end
+$var wire 1 h" x $end
+$var wire 1 i" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[23] $end
+$scope module uut_tipica $end
+$var wire 1 j" A $end
+$var wire 1 k" B $end
+$var wire 1 l" X $end
+$var wire 1 m" Y $end
+$var wire 1 n" reset $end
+$var wire 1 o" x $end
+$var wire 1 p" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[24] $end
+$scope module uut_tipica $end
+$var wire 1 q" A $end
+$var wire 1 r" B $end
+$var wire 1 s" X $end
+$var wire 1 t" Y $end
+$var wire 1 u" reset $end
+$var wire 1 v" x $end
+$var wire 1 w" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[25] $end
+$scope module uut_tipica $end
+$var wire 1 x" A $end
+$var wire 1 y" B $end
+$var wire 1 z" X $end
+$var wire 1 {" Y $end
+$var wire 1 |" reset $end
+$var wire 1 }" x $end
+$var wire 1 ~" y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[26] $end
+$scope module uut_tipica $end
+$var wire 1 !# A $end
+$var wire 1 "# B $end
+$var wire 1 ## X $end
+$var wire 1 $# Y $end
+$var wire 1 %# reset $end
+$var wire 1 &# x $end
+$var wire 1 '# y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[27] $end
+$scope module uut_tipica $end
+$var wire 1 (# A $end
+$var wire 1 )# B $end
+$var wire 1 *# X $end
+$var wire 1 +# Y $end
+$var wire 1 ,# reset $end
+$var wire 1 -# x $end
+$var wire 1 .# y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[28] $end
+$scope module uut_tipica $end
+$var wire 1 /# A $end
+$var wire 1 0# B $end
+$var wire 1 1# X $end
+$var wire 1 2# Y $end
+$var wire 1 3# reset $end
+$var wire 1 4# x $end
+$var wire 1 5# y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[29] $end
+$scope module uut_tipica $end
+$var wire 1 6# A $end
+$var wire 1 7# B $end
+$var wire 1 8# X $end
+$var wire 1 9# Y $end
+$var wire 1 :# reset $end
+$var wire 1 ;# x $end
+$var wire 1 <# y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[30] $end
+$scope module uut_tipica $end
+$var wire 1 =# A $end
+$var wire 1 ># B $end
+$var wire 1 ?# X $end
+$var wire 1 @# Y $end
+$var wire 1 A# reset $end
+$var wire 1 B# x $end
+$var wire 1 C# y $end
+$upscope $end
+$upscope $end
+$scope begin gen_celdas[31] $end
+$scope module uut_tipica $end
+$var wire 1 D# A $end
+$var wire 1 E# B $end
+$var wire 1 F# X $end
+$var wire 1 G# Y $end
+$var wire 1 H# reset $end
+$var wire 1 I# x $end
+$var wire 1 J# y $end
+$upscope $end
+$upscope $end
+$scope module uut_final_c $end
+$var wire 1 K# A $end
+$var wire 1 L# B $end
+$var wire 1 M# X $end
+$var wire 1 N# Y $end
+$var wire 1 $ Z $end
+$var wire 1 O# Z_out $end
+$var wire 1 P# reset $end
+$upscope $end
+$scope module uut_inicial $end
+$var wire 1 Q# A $end
+$var wire 1 R# B $end
+$var wire 1 S# X $end
+$var wire 1 T# Y $end
+$var wire 1 U# reset $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+zU#
+1T#
+0S#
+1R#
+0Q#
+zP#
+1O#
+1N#
+0M#
+zL#
+zK#
+1J#
+0I#
+zH#
+1G#
+0F#
+0E#
+1D#
+1C#
+0B#
+zA#
+1@#
+0?#
+1>#
+0=#
+1<#
+0;#
+z:#
+19#
+08#
+07#
+06#
+15#
+04#
+z3#
+12#
+01#
+00#
+1/#
+1.#
+0-#
+z,#
+1+#
+0*#
+0)#
+0(#
+1'#
+0&#
+z%#
+1$#
+0##
+0"#
+0!#
+1~"
+0}"
+z|"
+1{"
+0z"
+0y"
+1x"
+1w"
+0v"
+zu"
+1t"
+0s"
+0r"
+0q"
+1p"
+0o"
+zn"
+1m"
+0l"
+1k"
+0j"
+1i"
+0h"
+zg"
+1f"
+0e"
+0d"
+0c"
+1b"
+0a"
+z`"
+1_"
+0^"
+0]"
+0\"
+1["
+0Z"
+zY"
+1X"
+0W"
+0V"
+1U"
+1T"
+0S"
+zR"
+1Q"
+0P"
+1O"
+0N"
+1M"
+0L"
+zK"
+1J"
+0I"
+0H"
+1G"
+1F"
+0E"
+zD"
+1C"
+0B"
+0A"
+0@"
+1?"
+0>"
+z="
+1<"
+0;"
+1:"
+19"
+18"
+07"
+z6"
+15"
+04"
+03"
+02"
+11"
+00"
+z/"
+1."
+0-"
+1,"
+0+"
+1*"
+0)"
+z("
+1'"
+0&"
+0%"
+1$"
+1#"
+0""
+z!"
+1~
+0}
+1|
+1{
+1z
+0y
+zx
+1w
+0v
+1u
+0t
+1s
+0r
+zq
+1p
+0o
+1n
+1m
+1l
+0k
+zj
+1i
+0h
+1g
+0f
+1e
+0d
+zc
+1b
+0a
+0`
+1_
+1^
+0]
+z\
+1[
+0Z
+1Y
+0X
+1W
+0V
+zU
+1T
+0S
+0R
+0Q
+1P
+0O
+zN
+1M
+0L
+0K
+1J
+1I
+0H
+zG
+1F
+0E
+0D
+0C
+1B
+0A
+z@
+1?
+0>
+0=
+0<
+1;
+0:
+z9
+18
+07
+06
+15
+14
+03
+z2
+11
+00
+0/
+0.
+1-
+0,
+z+
+1*
+0)
+1(
+0'
+b0 &
+b111111111111111111111111111111111 %
+1$
+0#
+b1000000100010010101111010000001 "
+b10010010000101010011010100100100 !
+$end
+#1010
+04
+0*
+0-
+b111111111111111111111111111111100 %
+0T#
+1/
+1K
+1R
+0Y
+0u
+0:"
+0O"
+1V"
+1]"
+1d"
+1r"
+10#
+17#
+0>#
+1'
+05
+1<
+0J
+0_
+1f
+0$"
+1+"
+12"
+09"
+0U"
+1j"
+0x"
+1!#
+0/#
+0D#
+1Q#
+1#
+b110001111100000101011001100011 "
+b100100001001101011000001001 !
+#3020
+0^
+0T
+0W
+0M
+0P
+0F
+0I
+0?
+0B
+08
+0;
+b111111111111111111111111100000000 %
+01
+0/
+16
+1=
+0K
+0R
+1Y
+1`
+0g
+0n
+1u
+0,"
+13"
+1:"
+1A"
+1H"
+1O"
+0]"
+0r"
+1y"
+1"#
+00#
+07#
+1>#
+1E#
+15
+1_
+0m
+1t
+1$"
+02"
+19"
+0G"
+1N"
+1U"
+1\"
+1x"
+1D#
+b11000110110111111001100110001101 "
+b10000110101110010111101100001101 !
+#5030
+0N#
+0G#
+0J#
+0@#
+0C#
+09#
+0<#
+02#
+05#
+0+#
+0.#
+0$#
+0'#
+0{"
+0~"
+0t"
+0O#
+0$
+0w"
+1M#
+0m"
+1F#
+0p"
+1I#
+0f"
+1?#
+0i"
+1B#
+0_"
+18#
+0b"
+1;#
+0X"
+11#
+0["
+14#
+0Q"
+1*#
+0T"
+1-#
+0J"
+1##
+0M"
+1&#
+0C"
+1z"
+0F"
+1}"
+0<"
+1s"
+0?"
+1v"
+05"
+1l"
+08"
+1o"
+0."
+1e"
+01"
+1h"
+0'"
+1^"
+0*"
+1a"
+0~
+1W"
+0#"
+1Z"
+0w
+1P"
+0z
+1S"
+0p
+1I"
+0s
+1L"
+0i
+1B"
+1E"
+1;"
+1>"
+14"
+17"
+1-"
+10"
+1&"
+1)"
+1}
+1""
+1v
+1y
+1o
+1r
+1h
+1O
+1k
+0I
+1E
+0^
+1a
+1:
+0?
+1H
+0T
+1d
+10
+0B
+1>
+0W
+0l
+1Z
+13
+08
+1A
+0M
+0b
+1V
+1]
+1)
+0;
+17
+0P
+0e
+1,
+1L
+1S
+01
+0F
+b0 %
+0[
+b111111111111111111111111111111111 &
+1S#
+0(
+1/
+06
+0=
+1D
+0Y
+0`
+1g
+0u
+1,"
+03"
+0O"
+1]"
+0d"
+0k"
+1r"
+0y"
+0"#
+1)#
+0>#
+0E#
+0R#
+0#
+0<
+1J
+1Q
+0_
+0f
+1m
+0t
+0{
+0$"
+0+"
+12"
+09"
+1@"
+0N"
+0U"
+0\"
+1c"
+0!#
+1/#
+16#
+0D#
+b1001001101110101001000010010 "
+b110010110000101000010001100101 !
+#7040
+1#
+1O#
+1$
+0M#
+0F#
+0I#
+0?#
+1N#
+0B#
+1G#
+08#
+1J#
+0;#
+1@#
+01#
+1C#
+04#
+19#
+0*#
+1<#
+0-#
+12#
+0##
+15#
+0&#
+1+#
+0z"
+1.#
+0}"
+1$#
+0s"
+1'#
+0v"
+1{"
+0l"
+1~"
+0o"
+1t"
+0e"
+1w"
+0h"
+1m"
+0^"
+1p"
+0a"
+1f"
+0W"
+1i"
+0Z"
+1_"
+0P"
+1b"
+0S"
+1X"
+0I"
+1["
+0L"
+1Q"
+0B"
+1T"
+0E"
+1J"
+0;"
+1M"
+0>"
+1C"
+04"
+1F"
+07"
+1<"
+0-"
+1?"
+00"
+15"
+0&"
+18"
+0)"
+1."
+0}
+11"
+0""
+1'"
+0v
+1*"
+0y
+1~
+0o
+1#"
+0r
+1w
+0h
+1z
+1p
+1s
+1i
+1l
+1b
+1e
+1[
+1^
+0k
+1T
+0a
+1W
+0d
+1M
+0Z
+1P
+0]
+1F
+0S
+1I
+0V
+1?
+0L
+1B
+0O
+b111111111111111111111111111111000 %
+18
+0E
+0H
+0>
+0A
+07
+0:
+00
+03
+0)
+0,
+b0 &
+0S#
+1(
+0/
+16
+1=
+0D
+1`
+0g
+1n
+1u
+0|
+13"
+0]"
+1d"
+1k"
+0r"
+1y"
+1"#
+0)#
+1E#
+1R#
+05
+0J
+0Q
+1_
+1f
+0m
+1$"
+1+"
+19"
+1U"
+1\"
+0x"
+0/#
+06#
+1D#
+b10000110110101111100110100001101 "
+b10000000111100111110001100000001 !
+#9050
+1O#
+1$
+0M#
+0F#
+0I#
+0?#
+0B#
+08#
+0;#
+01#
+04#
+0*#
+0-#
+0##
+0&#
+0z"
+0}"
+0s"
+0v"
+0l"
+0o"
+0e"
+0h"
+0^"
+0a"
+0W"
+0Z"
+0P"
+0S"
+0I"
+0L"
+0B"
+0E"
+0;"
+0>"
+04"
+07"
+0-"
+00"
+0&"
+0)"
+0}
+0""
+0v
+0y
+0o
+0r
+0h
+0k
+0a
+0d
+0Z
+0]
+0S
+0V
+0L
+0O
+0E
+0H
+0>
+1;
+0A
+11
+07
+1B
+14
+0:
+18
+1*
+b0 &
+00
+1-
+b111111111111111111111111111111111 %
+1T#
+1D
+1K
+0A"
+1O"
+0V"
+0d"
+1)#
+10#
+0'
+1.
+15
+1C
+1J
+1Q
+0f
+1{
+0U"
+0c"
+0j"
+1q"
+1x"
+1(#
+1/#
+16#
+0Q#
+0#
+b10011110100011011100110100111101 "
+b10111011001000111111000101110110 !
+#11060
+0N#
+0G#
+0J#
+0@#
+0O#
+0$
+0C#
+1M#
+09#
+1F#
+0<#
+1I#
+02#
+1?#
+05#
+1B#
+0+#
+18#
+0.#
+1;#
+0$#
+11#
+0'#
+14#
+0{"
+1*#
+0~"
+1-#
+0t"
+1##
+0w"
+1&#
+0m"
+1z"
+0p"
+1}"
+0f"
+1s"
+0i"
+1v"
+0_"
+1l"
+0b"
+1o"
+0X"
+1e"
+0["
+1h"
+0Q"
+1^"
+0T"
+1a"
+0J"
+1W"
+0M"
+1Z"
+0C"
+1P"
+0F"
+1S"
+0<"
+1I"
+0?"
+1L"
+05"
+1B"
+08"
+1E"
+0."
+1;"
+01"
+1>"
+0'"
+14"
+17"
+1-"
+10"
+1&"
+1)"
+1}
+0*"
+1""
+0~
+1v
+0#"
+1y
+0w
+1o
+0z
+1r
+0p
+1h
+0s
+1k
+0i
+1a
+0l
+1d
+0b
+1Z
+0e
+1]
+0[
+1S
+0^
+1V
+0T
+1L
+0W
+1O
+0M
+1E
+0P
+1H
+0F
+1>
+0I
+1A
+0?
+17
+0B
+1:
+08
+10
+0;
+13
+01
+1)
+04
+1,
+0*
+b111111111111111111111111111111111 &
+1S#
+0-
+b0 %
+0T#
+0(
+0D
+0K
+1Y
+1g
+0u
+1|
+1%"
+1]"
+0k"
+0)#
+00#
+1>#
+0R#
+1'
+0.
+1<
+0C
+1X
+1f
+1m
+0$"
+02"
+09"
+0@"
+1G"
+1U"
+0\"
+1c"
+1j"
+0q"
+1!#
+0(#
+1=#
+1Q#
+b11000110001011011111011110001100 "
+b11110110110101000101011111101101 !
+#13070
+1/
+0=
+1R
+0`
+0g
+0|
+0,"
+03"
+1A"
+0O"
+1V"
+1r"
+0"#
+17#
+0E#
+05
+1C
+0f
+0m
+1t
+0{
+1$"
+12"
+19"
+1N"
+1\"
+0x"
+1(#
+b1100011001101110010010011000110 "
+b11111100111111011110100111111001 !
+#15080
+06
+1=
+1K
+0R
+1g
+0n
+1|
+0%"
+1,"
+13"
+0H"
+0]"
+0y"
+1"#
+10#
+07#
+15
+0<
+0C
+0J
+0_
+1m
+0t
+0$"
+0+"
+1@"
+0N"
+1x"
+0!#
+0(#
+0/#
+0D#
+b1010101000100111101001010101010 "
+b1100010111101111000010011000101 !
+#17090
+1O#
+1$
+0M#
+0F#
+0I#
+0?#
+1N#
+0B#
+1G#
+08#
+1J#
+0;#
+1@#
+01#
+1C#
+04#
+19#
+0*#
+1<#
+0-#
+12#
+0##
+15#
+0&#
+1+#
+0z"
+1.#
+0}"
+1$#
+0s"
+1'#
+0v"
+1{"
+0l"
+1~"
+0o"
+1t"
+0e"
+1w"
+0h"
+1m"
+0^"
+1p"
+0a"
+1f"
+0W"
+1i"
+0Z"
+1_"
+0P"
+1b"
+0S"
+1X"
+0I"
+1["
+0L"
+1Q"
+0B"
+1T"
+0E"
+1J"
+0;"
+1M"
+0>"
+1C"
+04"
+1F"
+07"
+1<"
+0-"
+1?"
+00"
+15"
+0&"
+18"
+0)"
+1."
+0}
+11"
+0""
+1'"
+0v
+1*"
+0y
+1~
+0o
+1#"
+0r
+1w
+0h
+1z
+0k
+1p
+0a
+1s
+0d
+1i
+0Z
+1l
+1b
+1e
+1[
+1^
+1T
+1W
+1M
+1P
+0]
+1F
+0S
+1I
+0V
+1?
+0L
+1B
+0O
+18
+0E
+1;
+0H
+b111111111111111111111111111111100 %
+11
+0>
+0A
+07
+0:
+00
+03
+0)
+0,
+b0 &
+0S#
+1(
+16
+0=
+1D
+1R
+0Y
+1%"
+03"
+0:"
+1d"
+1k"
+1y"
+0"#
+1)#
+17#
+0>#
+1R#
+1J
+1_
+1f
+1{
+1$"
+1+"
+1N"
+0U"
+0c"
+1/#
+1D#
+b111011110100100111001001110111 "
+b11110010101011111111011111100101 !
+#19100
